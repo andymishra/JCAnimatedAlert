@@ -22,7 +22,7 @@ pod 'JCAnimatedAlert'
 
 ## Author
 
-andymishra, anand.mishra.mca@gmail.com
+Anand Mishra
 
 ## License
 
