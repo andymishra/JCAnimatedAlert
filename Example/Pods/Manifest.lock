@@ -1,0 +1,16 @@
+PODS:
+  - JCAnimatedAlert (0.1.0)
+
+DEPENDENCIES:
+  - JCAnimatedAlert (from `../`)
+
+EXTERNAL SOURCES:
+  JCAnimatedAlert:
+    :path: ../
+
+SPEC CHECKSUMS:
+  JCAnimatedAlert: 8a4f25add3909ff6c5c330b33d7a98f1e907a6a2
+
+PODFILE CHECKSUM: c0a463f5ccb37d5c333dd06bd49fbf3aa4b5ea34
+
+COCOAPODS: 1.4.0

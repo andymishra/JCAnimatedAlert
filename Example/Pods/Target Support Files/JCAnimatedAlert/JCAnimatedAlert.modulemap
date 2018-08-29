@@ -1,0 +1,6 @@
+framework module JCAnimatedAlert {
+  umbrella header "JCAnimatedAlert-umbrella.h"
+
+  export *
+  module * { export * }
+}

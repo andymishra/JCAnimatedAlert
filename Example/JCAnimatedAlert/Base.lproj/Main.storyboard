@@ -1,30 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zv1-LW-u29">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="gKj-Po-8DR">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="JCAnimatedAlert_Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                <viewController id="Zv1-LW-u29" customClass="ViewController" customModule="JCAnimatedAlert_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fyT-mw-9xw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alert Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaF-MN-AVy">
+                                <rect key="frame" x="148" y="36" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ni9-6p-OyG">
+                                <rect key="frame" x="150" y="96" width="74" height="30"/>
+                                <state key="normal" title="Basic Alert"/>
+                                <connections>
+                                    <action selector="basicAlertAction:" destination="Zv1-LW-u29" eventType="touchUpInside" id="5xs-iE-Xai"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeO-U5-w08">
+                                <rect key="frame" x="107" y="196" width="161" height="30"/>
+                                <state key="normal" title="Success Messgae Alert"/>
+                                <connections>
+                                    <action selector="sucessMessageAlertAction:" destination="Zv1-LW-u29" eventType="touchUpInside" id="5BV-02-Nqk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hU-G4-SeE">
+                                <rect key="frame" x="138" y="318" width="100" height="30"/>
+                                <state key="normal" title="Warrning Alert"/>
+                                <connections>
+                                    <action selector="errorMessageAlertAction:" destination="Zv1-LW-u29" eventType="touchUpInside" id="fuI-3J-X9o"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0hU-G4-SeE" firstAttribute="centerX" secondItem="fyT-mw-9xw" secondAttribute="centerX" id="A3M-mt-VBM"/>
+                            <constraint firstItem="OeO-U5-w08" firstAttribute="centerX" secondItem="fyT-mw-9xw" secondAttribute="centerX" id="AP9-zc-11q"/>
+                            <constraint firstItem="0hU-G4-SeE" firstAttribute="top" secondItem="OeO-U5-w08" secondAttribute="bottom" constant="92" id="LWZ-TH-Lnw"/>
+                            <constraint firstItem="OeO-U5-w08" firstAttribute="top" secondItem="ni9-6p-OyG" secondAttribute="bottom" constant="70" id="LvE-wr-6qB"/>
+                            <constraint firstItem="LaF-MN-AVy" firstAttribute="centerX" secondItem="fyT-mw-9xw" secondAttribute="centerX" id="M7A-WZ-0st"/>
+                            <constraint firstItem="ni9-6p-OyG" firstAttribute="top" secondItem="LaF-MN-AVy" secondAttribute="bottom" constant="39" id="WIJ-cq-dIg"/>
+                            <constraint firstItem="ni9-6p-OyG" firstAttribute="centerX" secondItem="fyT-mw-9xw" secondAttribute="centerX" id="dfY-Hk-1RM"/>
+                            <constraint firstItem="LaF-MN-AVy" firstAttribute="top" secondItem="vFM-X7-qKY" secondAttribute="top" constant="16" id="gMY-ml-wZD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vFM-X7-qKY"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l8j-Rd-zIp" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="57" y="555"/>
         </scene>
     </scenes>
 </document>
