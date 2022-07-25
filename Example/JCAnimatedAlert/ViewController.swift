@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         JCAnimatedAlert().showAlert("Warning", subTitle: "this will permanently delete!", style: AlertStyle.warning, buttonTitle:"Cancel", buttonColor:UIColor.colorFromRGB(0xD0D0D0) , otherButtonTitle:  "Yes, delete it!", otherButtonColor: UIColor.colorFromRGB(0xDD6B55)) { (isOtherButton) -> Void in
             if isOtherButton == true {
                 
-                print("Cancel Button  Pressed")
+                print("Cancel Button  clicked")
             }
             else {
                 _ = JCAnimatedAlert().showAlert("Deleted!", subTitle: "Your  file has been deleted!", style: AlertStyle.success)
