@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func errorMessageAlertAction(_ sender: Any) {
-        _ = JCAnimatedAlert().showAlert("Warning", subTitle: "this will permanently delete!", style: AlertStyle.warning, buttonTitle:"Cancel", buttonColor:UIColor.colorFromRGB(0xD0D0D0) , otherButtonTitle:  "Yes, delete it!", otherButtonColor: UIColor.colorFromRGB(0xDD6B55)) { (isOtherButton) -> Void in
+        JCAnimatedAlert().showAlert("Warning", subTitle: "this will permanently delete!", style: AlertStyle.warning, buttonTitle:"Cancel", buttonColor:UIColor.colorFromRGB(0xD0D0D0) , otherButtonTitle:  "Yes, delete it!", otherButtonColor: UIColor.colorFromRGB(0xDD6B55)) { (isOtherButton) -> Void in
             if isOtherButton == true {
                 
                 print("Cancel Button  Pressed")
